@@ -1,0 +1,33 @@
+{
+  "scan_settings": {
+    "timeout": 1,
+    "max_threads": 100,
+    "banner_grab": true,
+    "os_fingerprint": true,
+    "save_json": true,
+    "save_html": true
+  },
+  "targets": [
+    {
+      "host": "scanme.nmap.org",
+      "description": "Nmap official test server — safe and legal to scan",
+      "port_range": [1, 1024]
+    },
+    {
+      "host": "testphp.vulnweb.com",
+      "description": "Acunetix official vulnerable test site — legal to scan",
+      "port_range": [1, 1024]
+    }
+  ],
+  "risk_ratings": {
+    "HIGH": [21, 23, 135, 139, 445, 1433, 3306, 3389, 5900, 6379, 27017],
+    "MEDIUM": [22, 25, 53, 110, 143, 1521, 5432, 8080, 9200]
+  },
+  "report": {
+    "author": "Maneesh Goud",
+    "certification": "CEH Certified",
+    "organization": "York University — Cybersecurity Operations",
+    "output_json": "report.json",
+    "output_html": "report.html"
+  }
+}
