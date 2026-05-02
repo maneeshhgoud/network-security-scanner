@@ -7,10 +7,10 @@
     "save_json": true,
     "save_html": true
   },
-  "targets": [ 
-    { 
-      "host": "192.168.1.105", 
-      "description": "My own laptop", 
+  "targets": [
+    {
+      "host": "scanme.nmap.org",
+      "description": "Nmap official test server — safe and legal to scan",
       "port_range": [1, 1024] 
     },
     {
